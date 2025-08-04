@@ -1,0 +1,6 @@
+# nand_gate.pcf
+# Pinout for a common iCE40UP5K breakout board
+
+set_io a 34  # Input a connected to pin 34 (e.g., a button)
+set_io b 35  # Input b connected to pin 35 (e.g., another button)
+set_io y 13  # Output y connected to pin 13 (e.g., an LED)
