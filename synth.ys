@@ -1,0 +1,16 @@
+read_verilog nand_gate.v
+
+synth -top nand_gate
+
+abc -lut 2
+
+write_verilog -noattr nand_gate_netlist.v
+
+stat
+
+# This command will save the schematic to a file named 'nand_gate_schematic.pdf'
+# The '-viewer none' option prevents it from trying to open a viewer.
+show -format pdf -viewer none -prefix nand_gate_schematic
+
+# Correct command to exit Yosys
+exit
